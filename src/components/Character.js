@@ -27,7 +27,7 @@ const StyledCharacter = styled.div`
 export default function Character({ info }) {
     return (
         <StyledCharacter>
-            {info.results.name}
+            {info.name}
         </StyledCharacter>
     )
 }
