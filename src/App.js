@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'; // Import state and effect hooks
 import axios from 'axios' // Import axios
 import Character from './components/Character' // Import character component
+import logo from './images/logo-star-wars.svg'
 import './App.css';
 
 const App = () => {
@@ -24,7 +25,10 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Star Wars Characters</h1>
+      <header>
+        <img className="logo" src={logo} alt="Star Wars Logo"/>
+        <h1 className="Header">Characters</h1>
+      </header>
       {
         characters.map((character) => {
           return <Character key={character.name} info={character} />

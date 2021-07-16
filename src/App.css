@@ -4,12 +4,26 @@
   font-family: 'Open Sans', sans-serif;
 }
 .Header {
-  color: #fff;
-  padding: 15px;
-  background: #151515;
-  margin: 0 0 75px 0;
-  border-bottom: 1px solid #454545;
-  font-weight: 700;
+  font-weight: 400;
+  margin: 0;
+  display: inline-block;
 }
 
-/* write your parent styles in here for your App.js */
+/* Parent Styles */
+
+header {
+  color: #fff;
+  border-bottom: 1px solid #454545;
+  background: #151515;
+  padding: 35px;
+  margin: 0 0 75px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  max-width: 125px;
+  margin-right: 30px;
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+}
