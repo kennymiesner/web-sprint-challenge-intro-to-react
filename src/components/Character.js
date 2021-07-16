@@ -2,20 +2,20 @@ import React from 'react'
 import styled from 'styled-components' // Import Styled Components
 
 const StyledCharacter = styled.div`
-  width: 60%;
+  max-width: 75%;
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  margin-bottom: 10px;
+  padding: 30px;
+  margin: 0 auto 30px auto;
+  text-align: left;
 
   background-color: ${props => props.theme.secondaryColor};
   color: ${props => props.theme.primaryColor};
 
   @media ${props => props.theme.breakpointMobile} {
-    width: initial;
+    max-width: 100%;
+    margin: 0 30px 30px 30px;
   }
-
-  transition: all 0.3s ease-in-out;
 
   // Extending Selector: & = current selector we're on
   &:hover {
