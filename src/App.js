@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'; // Import state and effect hooks
 import axios from 'axios' // Import axios
 import Character from './components/Character' // Import character component
-// import data from './mocks/handlers' // Import Star Wars data
 import './App.css';
 
 const App = () => {
@@ -15,8 +14,8 @@ const App = () => {
   useEffect(() => {
     axios.get(`https://swapi.dev/api/people`)
     .then(res => {
-      console.log(res.data)
       setCharacterData(res.data)
+      console.log(res.data)
     })
     .catch(err => {
       console.log(err)
