@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 .Header {
   color: #fff;
@@ -8,6 +9,7 @@
   background: #151515;
   margin: 0 0 75px 0;
   border-bottom: 1px solid #454545;
+  font-weight: 700;
 }
 
 /* write your parent styles in here for your App.js */
