@@ -1,8 +1,29 @@
 .App {
   text-align: center;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  font-weight: 400;
+  margin: 0;
+  display: inline-block;
 }
-/* write your parent styles in here for your App.js */
+
+/* Parent Styles */
+
+header {
+  color: #fff;
+  border-bottom: 1px solid #454545;
+  background: #151515;
+  padding: 35px;
+  margin: 0 0 75px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  max-width: 125px;
+  margin-right: 30px;
+  border-right: 1px solid #fff;
+  padding-right: 30px;
+}
