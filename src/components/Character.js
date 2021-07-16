@@ -26,7 +26,7 @@ const StyledCharacter = styled.div`
         color: ${props => props.theme.secondaryColor};
         transform: scale(1.025);
     }
-    `
+`
 
 export default function Character({ info }) {
     return (

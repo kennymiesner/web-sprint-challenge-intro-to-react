@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'; // Import state and effect hooks
 import axios from 'axios' // Import axios
+import { BASE_URL } from './constants' // Import repeated base url
 import Character from './components/Character' // Import character component
-import logo from './images/logo-star-wars.svg'
+import logo from './images/logo-star-wars.svg' // Import logo for header
 import './App.css';
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
   useEffect(() => {
-    axios.get(`https://swapi.dev/api/people`)
+    axios.get(`${BASE_URL}/api/people`)
     .then(res => {
       setCharacters(res.data)
       console.log(res.data)
