@@ -8,8 +8,8 @@ const StyledCharacter = styled.div`
   padding: 15px;
   margin-bottom: 10px;
 
-  background-color: ${props => props.theme.primaryColor};
-  color: ${props => props.theme.white};
+  background-color: ${props => props.theme.secondaryColor};
+  color: ${props => props.theme.primaryColor};
 
   @media ${props => props.theme.breakpointMobile} {
     width: initial;
