@@ -84,14 +84,14 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 React JS is a JavaScript library for building component-based user interfaces. It was built by Facebook to help solve some of the major problems the team was facing when dealing with complex state. It offloads a lot of the state that an app needs to use from the DOM using a simple engine called the virtual DOM. Through a process called "reconciliation", React will detect state changes and update the virtual DOM. Once it knows which nodes have changed, it will only update those specific nodes on the actual DOM. 
 
-1. Describe component state.
+2. Describe component state.
 
 Component state is an object that holds information that may change at a given point. We can use `setState()` to schedule an update to a component's state object. The component will respond by re-rendering when state changes.
 
-1. Describe props.
+3. Describe props.
 
 Props, or properties, is a way to pass data between components. Data is being passed in a uni-directional flow, one way from parent to child.
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 
 A side effect is anything that affects something outside the scope of the function being executed. Some examples of side effects are fetching data from an API, timers, logging, and manually manipulating the DOM. You can sync effects using the effect hook, `useEffect()`, that tells React that a component needs to run, or execute, some side effect.
